@@ -17,6 +17,7 @@ class MyCards extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             AppCard(
+              onPressed: () {},
               margin: const EdgeInsets.only(left: 16),
               child: Row(
                 mainAxisSize: MainAxisSize.min,

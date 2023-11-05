@@ -4,17 +4,19 @@ class AppCard extends StatelessWidget {
   const AppCard({
     super.key,
     required this.child,
+    required this.onPressed,
     this.margin,
   });
 
   final Widget child;
+  final VoidCallback onPressed;
   final EdgeInsetsGeometry? margin;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(8),
-      onTap: () {},
+      onTap: onPressed,
       child: Container(
         height: 60,
         width: MediaQuery.sizeOf(context).width - 120,

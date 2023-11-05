@@ -14,6 +14,7 @@ class OffersItem extends StatelessWidget {
     final splittedText = text.split('<br>');
 
     return AppCard(
+      onPressed: () {},
       child: RichText(
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
