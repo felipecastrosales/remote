@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "861838681926",
+    "project_id": "remote-order-v1",
+    "storage_bucket": "remote-order-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861838681926:android:1a694c134ec4960f4da747",
+        "android_client_info": {
+          "package_name": "com.felipecastrosales.remote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_VIs7cMAZxWEEIU-J-JSFSPRXd9qArnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
