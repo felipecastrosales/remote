@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:remote/src/data/services/firebase/firebase.dart';
 
 class DiscoverOffersItem extends StatelessWidget {
   const DiscoverOffersItem({
@@ -13,9 +14,13 @@ class DiscoverOffersItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void onTap() {
+      AppFirebaseAnalytics.logHomeEvent(['DiscoverOffers']);
+    }
+
     return InkWell(
       borderRadius: BorderRadius.circular(8),
-      onTap: () {},
+      onTap: onTap,
       child: Container(
         width: 240,
         clipBehavior: Clip.antiAlias,
@@ -70,7 +75,7 @@ class DiscoverOffersItem extends StatelessWidget {
                     SizedBox(
                       height: 32,
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: onTap,
                         style: TextButton.styleFrom(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 8,

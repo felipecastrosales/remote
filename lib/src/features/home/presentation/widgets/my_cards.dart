@@ -18,6 +18,7 @@ class MyCards extends StatelessWidget {
           children: [
             AppCard(
               onPressed: () {},
+              events: const ['MyCards'],
               margin: const EdgeInsets.only(left: 16),
               child: Row(
                 mainAxisSize: MainAxisSize.min,

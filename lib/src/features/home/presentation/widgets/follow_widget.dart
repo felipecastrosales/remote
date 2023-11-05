@@ -8,6 +8,7 @@ class FollowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CardSectionWidget(
       title: 'Acompanhe também',
+      events: const ['CreditCard', 'Finance'],
       onPressed: () {},
       children: [
         Container(

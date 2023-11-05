@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:remote/src/data/services/firebase/firebase.dart';
 
 class ServiceWidgetTile extends StatelessWidget {
   const ServiceWidgetTile({
@@ -13,7 +14,11 @@ class ServiceWidgetTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        AppFirebaseAnalytics.logHomeEvent(
+          ['Services', 'Service_$title'],
+        );
+      },
       borderRadius: BorderRadius.circular(8),
       child: Container(
         width: 80,

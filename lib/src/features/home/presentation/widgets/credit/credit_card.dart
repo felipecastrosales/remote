@@ -9,6 +9,7 @@ class CreditCard extends StatelessWidget {
     return CardSectionWidget(
       title: 'Cartão de crédito',
       onPressed: () {},
+      events: const ['CreditCard', 'Finance'],
       children: [
         Text(
           'Fatura atual',

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:remote/src/data/services/firebase/firebase.dart';
 
 class MyAccount extends StatelessWidget {
   const MyAccount({super.key});
@@ -6,7 +7,9 @@ class MyAccount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        AppFirebaseAnalytics.logHomeEvent(['Account', 'Finance']);
+      },
       child: const Padding(
         padding: EdgeInsets.all(24),
         child: Row(

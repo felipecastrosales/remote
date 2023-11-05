@@ -15,6 +15,7 @@ class OffersItem extends StatelessWidget {
 
     return AppCard(
       onPressed: () {},
+      events: const ['Offers'],
       child: RichText(
         maxLines: 2,
         overflow: TextOverflow.ellipsis,

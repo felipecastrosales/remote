@@ -8,6 +8,7 @@ class LoanWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CardSectionWidget(
       title: 'Empréstimo',
+      events: const ['CreditCardCreditCard', 'Finance'],
       onPressed: () {},
       children: [
         Text(
