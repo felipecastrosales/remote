@@ -6,6 +6,7 @@ import 'package:remote/firebase_options.dart';
 import 'package:remote/src/data/services/firebase/firebase.dart';
 
 class AppFirebaseService {
+  /// Initializes Firebase and Remote Config.
   Future<void> setUpInitialization() async {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
@@ -13,6 +14,7 @@ class AppFirebaseService {
     await setUpRemoteConfig();
   }
 
+  /// Sets up Remote Config, sets defaults, and fetches and activates the config.
   Future<void> setUpRemoteConfig() async {
     try {
       final remoteConfig = FirebaseRemoteConfig.instance;

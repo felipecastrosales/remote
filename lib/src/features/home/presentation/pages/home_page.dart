@@ -13,6 +13,11 @@ class HomePage extends StatelessWidget {
       child: Column(
         children: [
           const HomeHeaderWidget(),
+
+          /// This is the part of the code that was changed to use the remote order
+          /// instead of the default order.
+          /// The remote order is fetched via the AppFirebaseRemoteGet class,
+          /// that gets the remote order from the Firebase Remote Config.
           for (final item
               in AppFirebaseRemoteGet.homeRemoteOrder.trim().split(','))
             switch (item.trim()) {
@@ -26,6 +31,8 @@ class HomePage extends StatelessWidget {
               HomeABKeys.follow => const FollowWidget(),
               HomeABKeys.searchOffers => const DiscoverOffersWidget(),
               HomeABKeys.divider => const AppDivider(),
+
+              /// If want to add space remotely between widgets
               _ when double.tryParse(item) != null =>
                 SizedBox(height: double.parse(item)),
               _ => const SizedBox(),
