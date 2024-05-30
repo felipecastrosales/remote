@@ -1,21 +1,21 @@
 name: remote
 description: Powering your app with Firebase.
 publish_to: 'none'
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
 
 dependencies:
-  firebase_analytics: ^10.10.0
-  firebase_core: ^2.28.0
-  firebase_remote_config: ^4.4.0
+  firebase_analytics: ^10.10.7
+  firebase_core: ^2.32.0
+  firebase_remote_config: ^4.4.7
   flutter:
     sdk: flutter
   provider: ^6.1.2
 
 dev_dependencies:
-  flutter_lints: ^3.0.2
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
 
